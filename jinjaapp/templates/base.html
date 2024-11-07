@@ -11,6 +11,26 @@
     <title>{% block title %}Ruby Class{% endblock %}</title>
 </head>
 <body>
+<header>
+    <h1>Ruby Class</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'services' %}">SERVICES</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main>
+    {% block content %}
+
+    {% endblock %}
+</main>
+
+<footer>
+   <p>&copy; 2024 ruby class</p>
+</footer>
 </body>
 </html>
